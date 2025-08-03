@@ -1,0 +1,12 @@
+******** By using Repository Design Pattern and Unit of Work***********
+
+Controllers/ >>>>>>> API endpoints 
+DTOs/ >>>>>>>> Data Transfer Objects
+Models/ >>>>> EF Core Entities
+Interfaces/ >>>>To define what your code should do, not how.
+          :IGenericRepository.cs>>>This interface provides reusable methods for any entity
+           >>>>To define the common operations: GetAll, GetById, Add, Update, Delete
+           :IUnitOfWork.cs>>>>>Saves all changes at UnitOfWork.cs file
+ 
+Repositories/>>>>Implementation (Logic Layer)>>This folder contains the actual logic behind your interfaces   
+Profiles/>>>> AutoMapper mappings
